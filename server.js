@@ -1,7 +1,6 @@
 const app = require('./src/app')
+const { app: { port } } = require('./src/configs/config.mongodb')
 
-const PORT = 3300
-
-const server = app.listen(PORT, () => {
-    console.log(`social-network start with ${PORT}`);
+const server = app.listen(port, () => {
+    console.log(`social-network start with ${port}`);
 })
